@@ -1,4 +1,6 @@
-import {Result} from './Result.js';
+import "../src/sass/main.scss";
+import {Result} from "../src/app/Result";
+
 class Game{
 
     currentStep = 0;
