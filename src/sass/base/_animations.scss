@@ -1,0 +1,60 @@
+@keyframes animateEven{
+
+    0%{
+        transform: rotate(15deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(-15deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes animateOdd{
+
+    0%{
+        transform: rotate(-15deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(15deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes animateBcg{
+
+    0%{
+        background-position: 0 0;
+    }   
+
+    50%{
+        background-position: 100% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}

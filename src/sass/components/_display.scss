@@ -1,0 +1,14 @@
+.display{
+
+    &--rounds{
+        border-radius: 1rem;
+        width: 10rem;
+        background: #262626;
+        border: 10px solid $color-red;        
+        text-align: center;
+        text-transform: uppercase;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+}

@@ -1,0 +1,57 @@
+.title{  
+   display: block;
+   width: 100rem;
+
+    &__item{
+        list-style: none;
+        text-transform: uppercase;
+        float: left;
+        margin-right: 0.8rem;
+        font-size: 6rem;
+        font-weight: 900;
+        color: $color-primary-transp-dark;
+        position: relative;        
+
+        &::before, &::after{
+            content: attr(data-letter);
+            color: $color-red;
+            position: absolute;
+            top: 0;
+            left: 0;            
+        }
+
+        &:nth-child(odd){
+            animation: animateOdd 3s linear infinite;
+
+             &::before{           
+                -webkit-clip-path: polygon(55% 0, 0 0 , 0 100% , 35% 100%);
+                clip-path: polygon(55% 0 , 0 0 , 0 100% , 35% 100%);                
+                top: -0.5rem;
+                left: -0.2rem;
+            }
+                &::after{            
+                -webkit-clip-path: polygon(55% 0 , 100% 0 , 100% 100% , 35% 100%);
+                clip-path: polygon(55% 0 , 100% 0 , 100% 100% , 35% 100%);                
+                top: -0.2rem;
+                left: 0.3rem;
+            }
+        }        
+
+        &:nth-child(even){
+            animation: animateEven 3s linear infinite;
+
+             &::before{           
+                -webkit-clip-path: polygon(25% 0, 0 0 , 0 100% , 75% 100%);
+                clip-path: polygon(25% 0 , 0 0 , 0 100% , 75% 100%);                
+                top: -0.5rem;
+                left: -0.3rem;
+            }
+                &::after{            
+                -webkit-clip-path: polygon(25% 0 , 100% 0 , 100% 100% , 7% 100%);
+                clip-path: polygon(25% 0 , 100% 0 , 100% 100% , 75% 100%);               
+                top: 0.2rem;
+                left: 0.2rem;
+            }
+        }
+    }
+}
