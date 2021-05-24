@@ -34,43 +34,55 @@
                 <li data-letter="r" class="title__item">r</li>
                 <li data-letter="s" class="title__item">s</li>
             </ul>
-
             <nav class="overlay__navigation">
                 <h2 class="heading-secondary">rounds :</h2>
                 <div class="overlay__options-container">
-                    <button class="btn btn--setup">+</button>
+                    <button class="btn btn--setup btn--up">+</button>
                     <div class="display display--rounds">
                         <div class="heading-secondary heading-secondary--display">0</div>
                     </div>
-                    <button class="btn btn--setup">-</button>
+                    <button class="btn btn--setup btn--down">-</button>
                 </div>
             </nav>
-
             <button class="btn btn--start">start</button>
         </header>
-
     </div>
 
-    <div class="score-board">
-        <div id="user-label" class="badge">User</div>
-        <div id="computer-label" class="badge">Comp</div>
-        <span id="user-score">0</span>:<span id="comp-score">0</span>
-    </div>
+    <div class="game-container">
+        <div class="game-container__board">
 
-    <div class="result">
-        <p>Welcome to 10 round game!</p>
-    </div>
+            <div class="game-container__label">
+                <div class="heading-secondary heading-secondary--display-grey">User</div>
+            </div>
 
-    <div class="choices">
-        <div class="choice neon" id="paper">
+            <div class="display display--score">
+                <span class="heading-primary heading-primary--display-grey">0</span> <span
+                    class="heading-primary heading-primary--display-grey">:<span
+                        class="heading-primary heading-primary--display-grey">0</span>
+            </div>
+
+            <div class="game-container__label">
+                <div class="heading-secondary heading-secondary--display-grey">Comp</div>
+            </div>
         </div>
-        <div class="choice" id="rock">
+
+        <div class="game-container__round-message">
+            <span class="heading-secondary heading-secondary--display-yellow">Round</span>
+            <span class="heading-secondary heading-secondary--display-yellow">0</span>
+            <span class="heading-secondary heading-secondary--display-yellow">of</span>
+            <span class="heading-secondary heading-secondary--display-yellow">0</span>
         </div>
-        <div class="choice" id="scissors">
+
+        <div class="game-container__choices">
+            <div class="btn-choice btn-choice--paper"></div>
+            <div class="btn-choice btn-choice--rock"></div>
+            <div class="btn-choice btn-choice--scissors"></div>
+        </div>
+
+        <div class="game-container__player-message">
+            <div class="heading-secondary heading-secondary--display-grey">Select Papper, Rock or Scissors</div>
         </div>
     </div>
-
-    <p id="player-message">Select Papper, Rock or Scissors</p>
 </body>
 
 </html>

@@ -9,6 +9,20 @@
         -webkit-text-stroke: 3px ($color-red);
         text-align: center;        
     }
+
+    &--display{
+        color: $color-red;
+        text-shadow: -0.2rem -0.2rem 1rem rgba($color-red, 0.5),
+                    0.3rem 0.3rem 1rem rgba($color-red, 0.5);
+    }
+
+    &--display-grey
+    {
+        font-size: 6rem;
+        color: $color-grey;
+        text-shadow: -0.2rem -0.2rem 1rem rgba($color-grey, 0.5),
+                    0.3rem 0.3rem 1rem rgba($color-grey, 0.5);
+    }
 }
 
 .heading-secondary{
@@ -20,5 +34,17 @@
         color: $color-red;
         text-shadow: -0.2rem -0.2rem 1rem rgba($color-red, 0.5),
                     0.3rem 0.3rem 1rem rgba($color-red, 0.5);
+    }
+
+    &--display-grey
+    {
+        font-size: 3rem;
+        color: $color-grey;
+        text-shadow: -0.2rem -0.2rem 1rem rgba($color-grey, 0.5),
+                    0.3rem 0.3rem 1rem rgba($color-grey, 0.5);
+    }
+
+    &--display-yellow{
+        color: $color-yellow;
     }
 }

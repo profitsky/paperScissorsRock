@@ -1,9 +1,12 @@
 .overlay{
-    height: 100vh;
-    width: 100vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: $color-primary-transp-dark;
     position: fixed;
-    opacity: 1;
+    top: 0;
+    left: 0;
 
     &__header{
         position: absolute;
@@ -33,7 +36,7 @@
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #f00);
-                filter: blur(1.5rem);
+                filter: blur(1.3rem);
                 background-size: 200%;              
                 z-index: -2;
                 animation: animateBcg 2s linear infinite;
@@ -52,13 +55,17 @@
             }
     }
 
+    &--fade-in{
+       animation-name: animateFadeIn;
+       animation-duration: 1s;
+       animation-fill-mode: forwards;       
+    }
+
     &__options-container{
         display: flex;
         flex-direction: column;
         margin-left: 2rem;
         justify-content: center;
         align-items: center;
-
-       
     }
 }

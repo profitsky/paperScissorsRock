@@ -1,0 +1,49 @@
+.game-container{
+    background-color: $color-primary-transp-light;
+    width: 100vw;
+    height: 100vh;
+    display: flex;    
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -5;    
+
+    &__board{
+        margin-top: 3em;
+        position: absolute;           
+    }
+
+    &__label{
+        background-color: $color-yellow;
+        padding: 0 3rem;
+        border-radius: 1rem;
+        position: absolute;
+        top: 50%;
+
+        &:nth-child(1)
+        {
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(3)
+        {
+            transform: translate(150%, -50%);
+        }
+    }
+
+    &__choices{
+        margin-top: 2rem;
+    }
+
+    &__player-message{
+        margin-top: 5rem;
+    }
+
+   &__round-message{
+       display: flex;
+       width: 25rem;
+       margin-top: 20rem;
+       justify-content: space-around;
+   }
+}
