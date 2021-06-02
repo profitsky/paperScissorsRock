@@ -1,5 +1,5 @@
 .game-container{
-    background-color: $color-primary-transp-light;
+    background-color: $color-primary-transp-dark;
     width: 100vw;
     height: 100vh;
     display: flex;    
@@ -23,12 +23,12 @@
 
         &:nth-child(1)
         {
-            transform: translate(-50%, -50%);
+            transform: translate(-65%, -50%);
         }
 
         &:nth-child(3)
         {
-            transform: translate(150%, -50%);
+            transform: translate(175%, -50%);
         }
     }
 

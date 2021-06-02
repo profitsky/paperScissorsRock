@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "none",
@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     filename: "js/[contenthash:6].[name]-bundle.js",
-    path: path.resolve(__dirname, "../", "dist")
+    path: path.resolve(__dirname, "../", "dist"),    
   },
 
   module: {
@@ -20,10 +20,18 @@ module.exports = {
           test: /\.s[ac]|c]ss$/i,
           use: [MiniCSSExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader" ]
         },
-
+        
         {
           test: /\.(jpg|png|svg|gif|jpeg)$/,
-          use: "file-loader"
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "[name].[ext]",
+                outputPath: "images"
+              }
+            }
+          ]
         },
 
         { 
@@ -58,11 +66,11 @@ module.exports = {
       minify: true 
     }),   
 
-    // new CopyWebpackPlugin({
-    //         patterns: [
-    //             { from: path.resolve(__dirname, '../static') }
-    //         ]           
-    //     }),
+    new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, '../static') }
+            ]           
+        }),
         
     new MiniCSSExtractPlugin({
       filename: "[name].[contenthash:6].css"

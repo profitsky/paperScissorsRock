@@ -39,46 +39,52 @@
                 <div class="overlay__options-container">
                     <button class="btn btn--setup btn--up">+</button>
                     <div class="display display--rounds">
-                        <div class="heading-secondary heading-secondary--display">0</div>
+                        <div class="heading-secondary heading-secondary--display">10</div>
                     </div>
                     <button class="btn btn--setup btn--down">-</button>
                 </div>
             </nav>
             <button class="btn btn--start">start</button>
         </header>
+        <div class="overlay__summary overlay__summary--isHidden">
+            <div class="overlay__summary-container">
+                <div class="overlay__summary-message"></div>
+                <div class="overlay__summary-result">
+                    <span class="heading-secondary heading-secondary--display-summary">0</span>
+                    <span class="heading-secondary heading-secondary--display-summary">to</span>
+                    <span class="heading-secondary heading-secondary--display-summary">0</span>
+                </div>
+                <button class="btn btn--restart">Play Again</button>
+            </div>
+            <div class="background-animation-container"></div>
+        </div>
     </div>
 
     <div class="game-container">
         <div class="game-container__board">
-
             <div class="game-container__label">
                 <div class="heading-secondary heading-secondary--display-grey">User</div>
             </div>
-
             <div class="display display--score">
-                <span class="heading-primary heading-primary--display-grey">0</span> <span
-                    class="heading-primary heading-primary--display-grey">:<span
-                        class="heading-primary heading-primary--display-grey">0</span>
+                <span class="heading-primary heading-primary--display-grey">0</span>
+                <span class="heading-primary heading-primary--display-grey">:</span>
+                <span class="heading-primary heading-primary--display-grey">0</span>
             </div>
-
             <div class="game-container__label">
                 <div class="heading-secondary heading-secondary--display-grey">Comp</div>
             </div>
         </div>
-
         <div class="game-container__round-message">
             <span class="heading-secondary heading-secondary--display-yellow">Round</span>
             <span class="heading-secondary heading-secondary--display-yellow">0</span>
             <span class="heading-secondary heading-secondary--display-yellow">of</span>
             <span class="heading-secondary heading-secondary--display-yellow">0</span>
         </div>
-
         <div class="game-container__choices">
-            <div class="btn-choice btn-choice--paper"></div>
-            <div class="btn-choice btn-choice--rock"></div>
-            <div class="btn-choice btn-choice--scissors"></div>
+            <div class="btn-choice btn-choice--isHidden"></div>
+            <div class="btn-choice btn-choice--isHidden"></div>
+            <div class="btn-choice btn-choice--isHidden"></div>
         </div>
-
         <div class="game-container__player-message">
             <div class="heading-secondary heading-secondary--display-grey">Select Papper, Rock or Scissors</div>
         </div>

@@ -1,0 +1,17 @@
+.background-animation-container{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+
+    &__element{
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        pointer-events: none;
+        animation: animateBackground 5s linear infinite;
+    }
+}

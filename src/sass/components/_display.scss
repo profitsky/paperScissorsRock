@@ -1,21 +1,24 @@
 .display{
-    border: 10px solid $color-red;
+     border: 10px solid $color-grey;
     border-radius: 1rem;
     text-transform: uppercase;
 
     &--rounds{
         width: 10rem;
+        height: 5rem;
         background: #262626;
         text-align: center;
         margin: 1rem;
-        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;      
     }
 
     &--score{
         width: 30em;
-        border: 10px solid $color-grey;
-        padding: 3rem 0;
+        height: 10rem;
+        // padding: 3rem 0;
         display: flex;
         justify-content: center;        
     }
-}
+};

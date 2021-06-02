@@ -19,7 +19,7 @@
     100%{
         transform: rotate(15deg);
     }
-}
+};
 
 @keyframes animateOdd{
 
@@ -42,7 +42,7 @@
     100%{
         transform: rotate(-15deg);
     }
-}
+};
 
 @keyframes animateBcg{
 
@@ -53,7 +53,7 @@
     100%{
         background-position: 200% 0;
     }
-}
+};
 
 @keyframes animateFadeIn{
 
@@ -64,4 +64,67 @@
     100%{
         clip-path: circle(0%);
     }
-}
+};
+
+@keyframes animateFadeOut{
+
+    0%{
+        clip-path: circle(0%);
+    }   
+
+    100%{
+        clip-path: circle(100%);
+    }
+};
+
+@keyframes animateError{
+
+    0%{
+        font-size: 3rem;
+    }   
+
+    75%{
+        font-size: 5.5rem;
+    }
+
+    100%{
+        font-size: 3rem;
+    }
+};
+
+@keyframes animateZoom{
+
+    0%{
+        transform: scale(1);
+    }   
+
+    75%{
+        transform: scale(1.4);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+};
+
+@keyframes animateBackground{
+
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    
+    10%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1) translateY(-700%) rotate(360deg);
+        opacity: 0;
+    }  
+};
+

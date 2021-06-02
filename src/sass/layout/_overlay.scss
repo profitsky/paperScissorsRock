@@ -17,6 +17,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &--isHidden{
+            opacity: 0;
+            display: none;
+        };
     }
 
     &__navigation{
@@ -35,7 +40,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(45deg, #fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #f00);
+                background: linear-gradient(45deg, #d0ff00, #d0ff00, #faf8f8, #d0ff00, #d0ff00, #faf8f8, #d0ff00, #faf8f8, #d0ff00);
                 filter: blur(1.3rem);
                 background-size: 200%;              
                 z-index: -2;
@@ -46,7 +51,7 @@
                 content: " ";
                 border-radius: 1rem;
                 top: 0.2rem;
-                left: 0.21rem;               
+                left: 0.2rem;               
                 right: 0.2rem;
                 bottom: 0.2rem;
                 position: absolute;
@@ -61,11 +66,58 @@
        animation-fill-mode: forwards;       
     }
 
+    &--fade-out{
+       animation-name: animateFadeOut;
+       animation-duration: 1s;
+       animation-fill-mode: forwards;
+    }
+
     &__options-container{
         display: flex;
         flex-direction: column;
         margin-left: 2rem;
         justify-content: center;
         align-items: center;
+    }
+
+    &__summary{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: $color-yellow;
+        font-size: 8rem;
+        z-index: 2;
+
+        &-container{
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }        
+
+        &-message{
+            font-size: 8rem;
+            margin-top: 5rem;
+        }
+
+        &-result{
+            color: $color-yellow;
+            display: flex;
+            flex-direction: row;            
+            text-transform: uppercase;
+            justify-content: space-between;
+            width: 16rem;
+            height: 10rem;
+        }
+
+        &--isHidden{
+            opacity: 0;
+            z-index: -10;
+            display: none;
+        }
     }
 }
