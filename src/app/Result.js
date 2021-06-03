@@ -72,7 +72,6 @@ export class Result{
     showResult(){
         this.summaryResultWrapper[0].innerHTML = this.userScore;
         this.summaryResultWrapper[2].innerHTML = this.compScore;
-        console.log(this.summaryResultWrapper)
     };
 
     getSummary(){

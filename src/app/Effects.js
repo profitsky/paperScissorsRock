@@ -10,15 +10,14 @@ export class Effects{
     createBox(value){
         const backgroundAnimatedElement = document.createElement("div");
         backgroundAnimatedElement.classList.add("background-animation-container__element")
-        let size = Math.random()*100;
+        let size = Math.random()*200;
         backgroundAnimatedElement.style.width = 20 + size + "px";
         backgroundAnimatedElement.style.height = 20 + size + "px";
         backgroundAnimatedElement.style.top = Math.random() * innerHeight + "px";
         backgroundAnimatedElement.style.left = Math.random() * innerWidth + "px";      
         backgroundAnimatedElement.style.backgroundSize = 20 + size + "px";
         backgroundAnimatedElement.style.backgroundImage = Object.values(this.pathProperty)[value];
-        console.log(backgroundAnimatedElement)    
-        this.boxWrapper.appendChild(pathProperty.length);
+        this.boxWrapper.appendChild(backgroundAnimatedElement);
 
         setTimeout(() => {
             backgroundAnimatedElement.remove();
