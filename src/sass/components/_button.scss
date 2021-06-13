@@ -48,6 +48,10 @@
         cursor: pointer;
         background-color: $color-yellow;
         background-size: 17rem;
+
+        @include respond(tab-land){
+            background-color: $color-primary-transp-dark;
+        }
     }
 
     &--noHover{
