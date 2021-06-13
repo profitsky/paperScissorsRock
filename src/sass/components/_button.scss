@@ -18,13 +18,13 @@
     }
 
     &--setup{
-        font-size: 3rem;
+        font-size: 5rem;
         width: 60%;
     }
 
     &--start,
     &--restart{
-        font-size: 3rem;
+        font-size: 5rem;
         padding: 0.5rem 1rem;
     }
 };
@@ -37,7 +37,7 @@
     border-radius: 50%;
     height: 20rem;
     width: 20rem;
-    margin: 0 2rem;    
+    margin: 1rem 1rem;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 15rem;

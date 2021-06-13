@@ -1,14 +1,12 @@
 .overlay{
-    top: 0;
-    right: 0;
-    bottom: 0;
+    top: 0;   
     left: 0;
+    width: 100%;
+    bottom: 0;
     background-color: $color-primary-transp-dark;
     position: fixed;
-    top: 0;
-    left: 0;
 
-    &__header{
+    &__header{        
         position: absolute;
         width: 80%;
         top: 10%;
@@ -18,6 +16,10 @@
         flex-direction: column;
         align-items: center;
 
+        @include respond(tab-port){
+            top: 3%;
+        }
+
         &--isHidden{
             opacity: 0;
             display: none;
@@ -25,14 +27,21 @@
     }
 
     &__navigation{
-        margin: 4rem 0;
+        margin: 10rem 0 5rem 0;
         position: relative;        
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 3rem;
         border-radius: 1rem;
-        
+
+        @include respond(tab-land){
+            margin-top: 2rem;
+        }
+
+        @include respond(phone){
+            margin-top: 6rem;
+        }
             &::before{
                 content: "";
                 position: absolute;
@@ -84,7 +93,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 80%;
         position: absolute;
         color: $color-yellow;
         font-size: 8rem;

@@ -1,16 +1,29 @@
 .title{  
-   display: block;
-   width: 100rem;
+   display: flex;
+   width: 90vw;
+   justify-content: center;
+   flex-wrap: wrap;
 
-    &__item{
-        list-style: none;
+    &__word{
+        display: flex;
+        margin: 0 2%;
+    }
+
+    &__item{        
         text-transform: uppercase;
-        float: left;
         margin-right: 0.8rem;
-        font-size: 6rem;
+        font-size: 10rem;
         font-weight: 900;
         color: $color-primary-transp-dark;
-        position: relative;        
+        position: relative;
+
+        @include respond(tab-land){
+            font-size: 6rem;
+        }
+        
+        @include respond(phone){
+            font-size: 8rem;
+        }
 
         &::before, &::after{
             content: attr(data-letter);

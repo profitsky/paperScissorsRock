@@ -1,11 +1,11 @@
 .display{
-     border: 10px solid $color-grey;
+    border: 0.8rem solid $color-grey;
     border-radius: 1rem;
     text-transform: uppercase;
 
     &--rounds{
-        width: 10rem;
-        height: 5rem;
+        width: 12rem;
+        height: 8rem;
         background: #262626;
         text-align: center;
         margin: 1rem;
@@ -15,9 +15,8 @@
     }
 
     &--score{
-        width: 30em;
+        width: 28em;
         height: 10rem;
-        // padding: 3rem 0;
         display: flex;
         justify-content: center;        
     }

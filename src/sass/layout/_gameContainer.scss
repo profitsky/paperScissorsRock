@@ -23,26 +23,39 @@
 
         &:nth-child(1)
         {
-            transform: translate(-65%, -50%);
+            transform: translate(0, -50%);
+            left: -7rem;
         }
 
         &:nth-child(3)
         {
-            transform: translate(175%, -50%);
+            transform: translate(0, -50%);
+            right: -8.5rem;
         }
     }
 
     &__choices{
         margin-top: 2rem;
+        width: 70rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        @include respond(phone){
+            width: 50rem;
+        }    
     }
 
     &__player-message{
         margin-top: 5rem;
+
+        @include respond(phone){
+            margin-top: 3rem;
+        }
     }
 
    &__round-message{
        display: flex;
-       width: 25rem;
+       width: 38rem;
        margin-top: 20rem;
        justify-content: space-around;
    }
